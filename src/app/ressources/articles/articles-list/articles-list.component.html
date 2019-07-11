@@ -1,0 +1,18 @@
+<h1>Test</h1>
+
+<div class="container">
+  <div class="row" *ngFor="let article of articles" [routerLink]="['/articles', article.slug]">
+    <div class=" col-sm">
+      <strong>{{article.name}}</strong>
+    </div>
+    <div class="col-sm">
+      <strong>{{article.description}}</strong>
+    </div>
+    <div class="col-sm">
+      {{article.name}}
+    </div>
+    <div class="col-sm">
+      {{article.description}}
+    </div>
+  </div>
+</div>
